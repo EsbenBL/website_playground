@@ -1,0 +1,149 @@
+
+/* Set root variables */
+:root {
+    --bgcolor:#1d1d1d;
+    --fontcolor: #ffff
+}
+
+body {
+    background-color: var(--bgcolor);
+    font-family: "Times New Roman";
+    color: var(--fontcolor);
+    text-align: justify
+}
+
+main, header, footer {
+    width:80%;
+    margin: 0 auto
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1{
+    font-size: 160px;
+    color: #fff;
+    font-weight: 1;
+    transition: 0.5s;
+}
+
+.content h2{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 1;
+    transition: 0.5s;
+}
+
+.content a{
+    text-decoration:none;
+    display: inline-block;
+    color:#fff;
+    font-size:24px;
+    border:1px solid #fff;
+    padding:15px;
+    border-radius:100px;
+    margin-top:10px;
+}
+
+/* Hover effects  */
+.content a:hover{
+    background-color: rgba(253, 54, 134, 0.307);
+    transition:1s;
+}
+
+
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+.content h2:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+
+/* Menu Icon Style */
+.sidebar_button {
+    position: absolute;
+    top: 10px;
+    width:auto;
+    border:none;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: transparent;
+    z-index:2;
+  }
+
+.bar1, .bar2, .bar3 {
+width: 35px;
+height: 5px;
+background-color: var(--fontcolor);
+margin: 6px 0;
+transition: 0.4s;
+}
+
+.change .bar1 {
+transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+transform: translate(0, -11px) rotate(45deg);
+}
+
+/* Sidebar / Menu */
+
+.sidepanel {
+    width: 0px; /* 0 width - change this with JavaScript */
+    height: 100vh;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */ 
+    top: 0;
+    left: 0;
+    background-color: rgba(253, 54, 134, 0.307); 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    padding-bottom: 60px;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+
+.sidepanel a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-family: "Lora", serif;
+  font-size: 30px;
+  color: #ffffff;
+  display: block;
+  transition: 0.1s;
+  filter:opacity(100%);
+}
+
+.sidepanel a:hover {
+    font-weight: bold;
+  }
+
+.sidepanel .closebtn {
+    position: absolute;
+    z-index:2;
+    top: 0;
+    font-size: 36px;
+    cursor: pointer;
+    padding: 12px 15px;
+  }
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: absolute;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    z-index:-1;
+    width: auto;
+    height: auto;
+    min-height:100%;
+    max-width:100%;
+    filter:opacity(60%);
+  }
+
