@@ -109,7 +109,7 @@ transform: translate(0, -11px) rotate(45deg);
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
   }
 
-.sidepanel a {
+.sidepanel a{
   padding: 8px 8px 8px 8px;
   text-decoration: none;
   font-family: "Lora", serif;
@@ -133,6 +133,56 @@ transform: translate(0, -11px) rotate(45deg);
     padding: 12px 15px;
   }
 
+  /* Media Icons */
+
+.icon_container{
+    display: inline-block;
+}
+
+.icon_container a{
+    float: left;
+    margin:10px;
+}
+
+.media_icon{
+    filter: brightness(0) invert(1);
+    width: 50px;
+    float:bottom;
+  }
+
+.media_icon:hover{
+    transition:0.3s;
+    width: 52px;
+    filter: saturate(10%) brightness(100%) contrast(10%);
+}
+
+
+
+/* Leftovers from icon test */
+/* .fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border:1px solid #fff;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa-linkedin {
+    position: fixed;
+    background: transparent;
+    color: white;
+    bottom:5px;
+    right:10px;
+  }
+
+  .fa-linkedin:hover{
+    background-color: rgba(54, 124, 253, 0.307);
+    transition:1s;
+} */
+
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
     position: absolute;
@@ -146,4 +196,3 @@ transform: translate(0, -11px) rotate(45deg);
     max-width:100%;
     filter:opacity(60%);
   }
-
